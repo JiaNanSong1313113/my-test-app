@@ -1,0 +1,44 @@
+/* bisic style for PC */
+.container {
+  height: 16px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.innerBar {
+  height: 6px;
+  max-width: 60px;
+  width: 100%;
+  background-color: #e0e0de;
+  border-radius: 18px;
+  margin: 16px;
+}
+
+.filler {
+  height: 100%;
+  background-color: green;
+  border-radius: inherit;
+  text-align: right;
+  transition: width 0.5s ease-in-out;
+}
+
+.label {
+  color: #8c959d;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* for phones */
+@media only screen and (max-width: 767px) {
+  .innerBar {
+    max-width: 40px;
+  }
+}
+
+/* for ipad */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .innerBar {
+    max-width: 50px;
+  }
+}
